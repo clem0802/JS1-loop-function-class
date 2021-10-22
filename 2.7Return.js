@@ -1,4 +1,4 @@
-// 2021.10.21 FROM (MM) 
+// 2021.10.21 FROM (MIMO) 
 /*----------------------------------*/
 // REUSABLE PROGRAMS-2 (RETURN)
 // use return at the end of a function to pass a value as output
