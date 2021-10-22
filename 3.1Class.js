@@ -1,4 +1,4 @@
-// 2021.10.22 FROM (MM) 
+// 2021.10.22 FROM (MIMO) 
 /*----------------------------------*/
 // CLASSES
 // classes are TEMPLATES FOR OBJECTS
