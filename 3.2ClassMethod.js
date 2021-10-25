@@ -10,6 +10,7 @@ class Car {
 
 var car1 = new Car("Tesla", "Model S");
 console.log(car1);
+// Car {brand: 'Tesla', model: 'Model S'}
 
 
 
@@ -46,7 +47,7 @@ class VirtualPet {
 }
 
 var pet = new VirtualPet("Garfield");
-pet.eat(); //!
+pet.eat(); //! => to le the new obj "pet" use the eat() METHOD
 // fishy cookies
 
 
@@ -110,3 +111,29 @@ class VirtualPet {
 var pet = new VirtualPet("Garfield");
 pet.eat("treats"); //!
 // fishy cookies
+
+
+
+/*----------------------------------*/
+// EXO
+class VirtualPet {
+    constructor(name) {
+        this.name = name;
+    }
+
+    eat(food){
+        if (food === "treats") {
+            console.log("fishy cookies");
+        } else {
+            console.log("discard");
+        }
+    }
+}
+
+var pet1 = new VirtualPet("Garfield");
+var pet2 = new VirtualPet("Sherrif");
+pet1.eat("treats"); // fishy cookies
+pet2.eat(); // discard
+console.log(pet1); // VirtualPet {name: 'Garfield'}
+console.log(pet2); // VirtualPet {name: 'Sherrif'}
+
