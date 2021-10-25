@@ -2,8 +2,8 @@
 /*----------------------------------*/
 // CLASSES
 // classes are TEMPLATES FOR OBJECTS
-// to code compkex programs, need to create many similar but distinct objects
-// to make the process less error-prone and more efficient, we use data structures caleed classes as templates
+// to code complex programs, need to create many similar but distinct objects
+// to make the process less error-prone and more efficient, we use data structures called classes as templates
 // once we create a template with the properties we want for all similar objects
 // we can use it to create new objects faster
 
@@ -16,7 +16,7 @@ console.log(book100); // {author: 'William Shakespear', title: 'The Da Vinci Cod
 
 /*----------------------------------*/
 // to START
-// to create a new class, we start with "class" keyword, a name, and braces
+// to create a new class, we start with "class" keyword, a name, and curly braces
 class Book {
 
 }
@@ -24,7 +24,6 @@ class Book {
 
 /*----------------------------------*/
 // CONSTRUCTOR()
-// to create a new class, we start with "class" keyword, a name, and braces
 //! the class name starts with an "UPPERCASE letter"
 //! inside a class we need a special METHOD called the "constructor()"
 class Book {
@@ -47,7 +46,7 @@ class Book {
 
 /*----------------------------------*/
 // THIS
-// to create a new object property, we use the keyword "THIS" followed by (,) and the property name
+// to create a new object property, we use the keyword "THIS" followed by (.) and the property name
 class Book {
     constructor(author, title){
         this.author
@@ -57,7 +56,7 @@ class Book {
 
 /*----------------------------------*/
 // to FINISH
-// to finish createing the NEW OBJECT PROPERTY, we assign the "author" parameter as a value to "this.author"
+// to finish creating the NEW OBJECT PROPERTY, we assign the "author" parameter as a value to "this.author"
 class Book {
     constructor(author, title){
         this.author = author;
