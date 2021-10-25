@@ -2,7 +2,7 @@
 /*----------------------------------*/
 // EXTENDING CLASSES // INHERITANCE
 // create an "Animal" CLASS to bundle the "main features" of the animals
-// then use.extend inheritance with "additional functionality" for the different kinds of animals
+// then use "extends" inheritance with "additional functionality" for the different kinds of animals
 // to inherit features from a CLASS, use "EXTENDS" keyword
 // the more SPECIFIC class inherits from the more GENERAL class
 // here the "Dog" CLASS inherit from the "Animal" CLASS
@@ -20,7 +20,7 @@ class Dog extends Animal{
 
 
 /*----------------------------------*/
-// INHERITANCE gives a class all the PROPERTIES of the class it's extending or inheriting from
+// INHERITANCE gives a class all the PROPERTIES of the class it is extending or inheriting from
 // "class Animal" is a SUPERCLASS of "class Dog"
 // "class Dog" here is a SUBCLASS of "class Animal"
 
@@ -33,8 +33,8 @@ class Dog extends Animal{
     //
 } 
 var dog = new Dog ("Pug");
-console.log(dog);
-// Dog {name: 'Pug'}
+console.log(dog); // Dog {name: 'Pug'}
+console.log(dog.name); // Pug
 
 
 
@@ -51,8 +51,7 @@ class Dog extends Animal{
     //
 } 
 var dog = new Dog ("Pug");
-console.log(dog.name);
-//! Pug 
+console.log(dog.name); // Pug 
 
 
 
@@ -81,7 +80,7 @@ dog.eat(); //!  CALL the eat() METHOD
 
 
 /*----------------------------------*/
-// can create as many as SUBCLASSES of Animal as we want 
+// we can create as many as SUBCLASSES of Animal as we want 
 // they will ALL have access to the PROPERTIES of the "class Animal"
 class Animal {
     constructor(name) {
@@ -160,8 +159,35 @@ dog.bark(); // CALL the bark() METHOD
 
 
 /*----------------------------------*/
+// INHERITANCE works ONE WAY ONLY
+// NOT ALL instances of Animal are a kind of Dog
+// add bird.bark() and see this is not gonna work
+class Animal {
+    constructor(name) {
+        this.name = name;
+    }
+}
+class Dog extends Animal {
+    bark() {
+        console.log(this.name + " is barking");
+    }
+} 
+class Bird extends Animal {
+    bark() {
+        console.log(this.name + " is barking");
+    }
+}
+var dog = new Dog ("Spot");
+var bird = new Bird("Sparrow")
+dog.bark(); // CALL the bark() METHOD // // Spot is barking
+bird.bark(); // CALL the bark() METHOD // // Sparrow is barking  // => computer is dumb......
+
+
+
+
+/*----------------------------------*/
 // to create an instance from Bike, with a set "speed PROPERTY"
-// we use     var bike = new Bike("15 km/h");  //! check for UNDERSTANDING
+// we use     var bike = new Bike("15 km/h");  
 class Vehicle {
     constructor(speed) {
         this.speed = speed;
@@ -172,12 +198,13 @@ class Bike extends Vehicle {
 }
 
 var bike = new Bike("15 km/h");
+console.log(bike); // Bike {speed: '15 km/h'}
 
 
 
 
 /*----------------------------------*/
-// to set a bookmark for "cookbook" OBJECT  //! check for UNDERSTANDING
+// to set a bookmark for "cookbook" OBJECT  //! NEED to check for UNDERSTANDING
 class Book {
     constructor(title) {
         this.title = title;
@@ -193,4 +220,8 @@ class Cookbook extends Book {
 }
 
 var cookbook = new Cookbook("Pie");
-cookbook.setBookmark(11);
+cookbook.setBookmark(15); // 4 is marked
+console.log(cookbook); // Cookbook {title: 'Pie', page: 4}
+console.log(cookbook.title); // Pie
+console.log(cookbook.setBookmark(15)); // 4 is marked
+console.log(cookbook.page); // 4 
