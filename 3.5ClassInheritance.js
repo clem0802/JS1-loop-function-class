@@ -204,11 +204,12 @@ console.log(bike); // Bike {speed: '15 km/h'}
 
 
 /*----------------------------------*/
-// to set a bookmark for "cookbook" OBJECT  //! NEED to check for UNDERSTANDING
+/*----------------------------------*/
+// to set a bookmark for "cookbook" OBJECT  //!!!!!!!!
 class Book {
     constructor(title) {
         this.title = title;
-        this.page = 1;
+        this.page = 4;
     }
 
     setBookmark(page) {
@@ -216,7 +217,9 @@ class Book {
     }
 }
 class Cookbook extends Book {
-    //
+    setBookmark(page) {
+        console.log(this.page + " is marked");
+    }
 }
 
 var cookbook = new Cookbook("Pie");
@@ -225,3 +228,30 @@ console.log(cookbook); // Cookbook {title: 'Pie', page: 4}
 console.log(cookbook.title); // Pie
 console.log(cookbook.setBookmark(15)); // 4 is marked
 console.log(cookbook.page); // 4 
+
+
+
+// ******************************
+class Book {
+    constructor(title) {
+        this.title = title;
+        this.page = 4;
+    }
+
+    setBookmark(page) {
+        this.page = page;
+    }
+}
+class Cookbook extends Book {
+    setBookmark(page) {
+        this.page = 15;  // !!!!! (like this the SUPERCLASS will be OVERRIDDEN
+        console.log(this.page + " is marked");
+    }
+}
+
+var cookbook = new Cookbook("Pie");
+cookbook.setBookmark(15); //! 15 is marked
+console.log(cookbook); //! Cookbook {title: 'Pie', page: 15}
+console.log(cookbook.title); // Pie
+console.log(cookbook.setBookmark(15)); //! 15 is marked
+console.log(cookbook.page); //! 15 
