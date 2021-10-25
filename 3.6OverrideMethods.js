@@ -55,8 +55,7 @@ class Wizard extends Human {
 }
 
 var wizard = new Wizard("stick");
-wizard.attack();
-// Swing stick
+wizard.attack(); // Swing stick
 
 
 
