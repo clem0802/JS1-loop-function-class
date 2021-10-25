@@ -30,11 +30,12 @@ class Inventory {
 
 var bag = new Inventory(10);
 bag.increase(5);
+// Inventory {size: 6}
 
 
 
 /*----------------------------------*/
-class VirtualPet { //! check
+class VirtualPet { 
     constructor(name) {
         this.name = name;
     }
@@ -49,6 +50,6 @@ class VirtualPet { //! check
 }
 
 var vDog = new VirtualPet("Bella");
-vDog.drink("water");
-// discard
+console.log(vDog); // VirtualPet {name: 'Bella'}
+vDog.drink("water"); // discard
 
