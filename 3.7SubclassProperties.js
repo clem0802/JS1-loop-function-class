@@ -115,7 +115,7 @@ leonidas.attack(); //!
 class Car {
     constructor(horsepower) {
         this.horsepower = horsepower;
-        this.doorts = 4;
+        this.doors = 4;
     }
 }
 
@@ -126,6 +126,5 @@ class SportsCar extends Car {
     }
 }
 
-var SportsCar= new SportsCar(500);
-console.log(SportsCar);
-// SportsCar { horsepower: 500, doors: 4, turbo: "Yes" }
+var sportsCar = new SportsCar(500);
+console.log(sportsCar); // SportsCar {horsepower: 500, doors: 4, turbo: 'Yes'}
