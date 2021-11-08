@@ -1,4 +1,4 @@
-// 2021.10.21 FROM (MIMO) 
+// 2021.10.21 FROM (MM) 
 /*----------------------------------*/
 // REUSABLE PROGRAMS-3 (LOOP1)
 // use functions to call loops and influence their output
