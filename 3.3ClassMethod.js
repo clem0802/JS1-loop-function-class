@@ -1,4 +1,4 @@
-// 2021.10.22 FROM (MIMO) 
+// 2021.10.22 FROM (MM) 
 /*----------------------------------*/
 // CLASSES with MOTHODS-2 (exos)
 // to call a class METHOD, it returns a value
