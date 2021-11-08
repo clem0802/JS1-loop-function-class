@@ -1,4 +1,4 @@
-// 2021.10.22 FROM (MIMO) 
+// 2021.10.22 FROM (MM) 
 /*----------------------------------*/
 // ES6 (JavaScript) - ARROW FUNCTIONS => (PARAMETERS)
 // get more used to working with arrow functions
