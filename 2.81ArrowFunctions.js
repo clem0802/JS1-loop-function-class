@@ -1,4 +1,4 @@
-// 2021.10.21 FROM (MIMO) 
+// 2021.10.21 FROM (MM) 
 /*----------------------------------*/
 // ES6 (JavaScript) - ARROW FUNCTIONS
 // they are used to write cleaner and shorter code
