@@ -1,4 +1,4 @@
-// 2021.10.20 FROM (MIMO) 
+// 2021.10.20 FROM (MM) 
 /*----------------------------------*/
 // THIS
 // the keyword "this" refers to the object that contains the method, below "myCereal"
