@@ -1,4 +1,4 @@
-// 2021.10.20 FROM (MIMO) 
+// 2021.10.20 FROM (MM) 
 /*----------------------------------*/
 // OBJECTS
 // a group of related content grouped into one VARIABLE
