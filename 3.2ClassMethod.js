@@ -1,4 +1,4 @@
-// 2021.10.22 FROM (MIMO) 
+// 2021.10.22 FROM (MM) 
 /*----------------------------------*/
 // CLASSES with MOTHODS-1 (exos)
 class Car {
