@@ -1,4 +1,4 @@
-// 2021.10.22 FROM (MIMO) 
+// 2021.10.22 FROM (MM) 
 /*----------------------------------*/
 // EXTENDING CLASSES // INHERITANCE
 // create an "Animal" CLASS to bundle the "main features" of the animals
