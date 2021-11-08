@@ -1,4 +1,4 @@
-// 2021.10.22 FROM (MIMO) 
+// 2021.10.22 FROM (MM) 
 /*----------------------------------*/
 // OVERRIDING METHODS
 // overriding a METHOD replaces the code of the METHOD in the SUPERCLASS with that of the SUBCLASS
