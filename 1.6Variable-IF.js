@@ -2,6 +2,17 @@
 /*----------------------------------*/
 // EXOs
 
+var score = 185;
+var highScore = score; // now we want to store the var "score" value in the var "hishScore" value
+console.log(highScore); // 185
+
+
+var word1 = "book";
+var word2 = "store";
+var word3 = word1 + word2;
+console.log(word3); // bookstore
+
+
 var answer = "Picasso";
 if (answer === "Picasso"){
     console.log(answer + " is correct!"); // Picasso is correct!
