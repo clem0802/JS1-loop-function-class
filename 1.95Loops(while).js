@@ -1,6 +1,7 @@
 // 2021.10.12 FROM (MM) //! TO REVIEW AND ADD on 10.14 !!!!
 /*----------------------------------*/
-// COUNTER VARIABLE
+// COUNTER VARIABLE !!
+// COUNTER VARIABLE !!
 
 var counter = 1;
 while(counter<4){
