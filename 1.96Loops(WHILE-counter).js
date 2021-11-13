@@ -32,7 +32,6 @@ while (isOn === true) {
 
 
 
-
 //---------------------
 var number = 1;
 while (number <= 3) {
@@ -42,7 +41,6 @@ while (number <= 3) {
 // 1
 // 2
 // 3
-
 
 
 
