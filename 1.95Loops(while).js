@@ -50,12 +50,7 @@ while (i < 5) {
     console.log(i);
     i++;
 }
-//*  (output)
-1
-2
-3
-4
-*//
+// 1  2  3  4
     
     
     
