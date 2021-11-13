@@ -29,3 +29,19 @@ while (isOn === true) {
 }
 // Before: true
 // After: false
+
+
+
+
+//---------------------
+var number = 1;
+while (number <= 3) {
+  console.log(number);
+  number++;
+}
+// 1
+// 2
+// 3
+
+
+
