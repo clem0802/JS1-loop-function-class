@@ -33,6 +33,21 @@ var number2 = 2;
 var multiply = false;
 if(multiply) {
   console.log(number1 * number2);
+  
+  
+  
+  
+var rainy = true;
+var takeCab = false;
+var walk = false;
+
+if (rainy) {
+  takeCab = true;
+  console.log("Taking a cab");
+} else {
+  walk = true;
+  consolelog("Walking home");
+} // => Taking a cab
 } else {
   console.log(number1 / number2);
 } // => 2
