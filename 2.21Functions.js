@@ -16,7 +16,8 @@ console.log(userAge(99)); // User age: 99
 
 // How do we use the retunr value of a function? => we call the function and use it like any other value
 // How do we store the return value in a variable? => we call the function and store it in a variable
-// a function can return any type of value, like a string, number, or boolean; this function returns the number value inside "result"
+// a function can return any type of value, like a string, number, or boolean
+// this function returns the number value inside "result"
 function timesTen(number){
     var result = number * 10;
     return result;
