@@ -1,6 +1,6 @@
 // 2021.10.19 FROM (MM) 
 /*----------------------------------*/
-// FUNCTIONS
+// FUNCTIONS with (PARAMETER)
 
 
 // Function nmes should be descriptive and let us know the main thing the function does. 
