@@ -76,7 +76,7 @@ function getAverage(grades){
 }
 var grades = [10, 5 ,8];
 var average = getAverage(grades);
-console.log(average);
+console.log(average); // 7.666666666666667
 
 
 
