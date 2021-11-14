@@ -12,10 +12,8 @@ function getGreeting(){
 };
 
 var greeting = () => "Hi";
-
 console.log(getGreeting()); // Hello
 console.log(greeting()); // Hi
-
 
 
 
@@ -33,7 +31,6 @@ function getGreeting(firstName){
 var welcome = (firstName) => { //!
     return "Hi, " + firstName;
 }
-
 console.log(welcome("Isaac")); // Hi, Isaac
 
 
@@ -44,16 +41,14 @@ const greetings = () => {
     return "Hello my son " + name;
 }
 console.log(greetings);
-
-
+//------
 
 const greetings = () => {
     let position = 20;
     return "Hi Jane";
 }
 greetings(); // Hi Jane
-
-
+//------
 
 const getVehicleCount = () => {
     count = 4000;
@@ -71,3 +66,36 @@ console.log(greetings()); // Welcome Isaac
 
 const getVehicleCount = () => 400;
 console.log(getVehicleCount()); // 400
+
+
+
+/*----------------------------------*/
+// => is the VALUE used to declare an ARROW FUNCTION
+const getStudentsCount = () => 200;
+console.log(getStudentsCount()); // 200
+//------
+
+const getStudentsCount = () => {
+    count = 200;
+    return count;
+}
+console.log(getStudentsCount()); // 200 => don't forget ()
+
+
+/*----------------------------------*/
+const getWelcomeMessage = () => "Welcome to Taiwan";
+console.log(getWelcomeMessage()); // Welcome to Taiwan
+//------
+
+const getStudentsCount = () => count=200; //!!
+console.log(getStudentsCount()); // 200
+//------
+
+const getCount = () => {
+    count = 400;
+    return count;
+}
+console.log(getCount()); // 400 => don't forget ()
+
+
+
