@@ -1,6 +1,6 @@
 // 2021.11.14 FROM (MM) 
 /*----------------------------------*/
-// FUNCTIONS with RETURN
+// FUNCTIONS => RETURN with PARAMETER
 
 
 /*----------------------------------*/
