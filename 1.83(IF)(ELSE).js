@@ -33,6 +33,7 @@ var number2 = 2;
 var multiply = false;
 if(multiply) {
   console.log(number1 * number2);
+}
   
   
   
