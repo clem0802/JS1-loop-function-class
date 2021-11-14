@@ -101,7 +101,7 @@ function displayName(name){
 function displayAlias(name){
     console.log(name[1]);
 }
-
+//------
 var firstName = ["Kent", "Luther"];
 displayAlias(firstName); // Luther
 var author = "Isaac TAN";
