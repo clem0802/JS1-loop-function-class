@@ -2,6 +2,7 @@
 /*-------------------------------*/ SYNTAX
 
 
+/------------------------- VARIABLE
 /------------------------- VARIABLE (simple)
 var today = 17;
 var birthday = 13;
@@ -37,6 +38,7 @@ var message = user + " is online: " + isOnline;
 console.log(message); // Joe is online: true
 
 
+/------------------------- LOOP
 /------------------------- LOOP (while)
 var speed = 0;
 while (speed < 100) {
@@ -62,6 +64,7 @@ for (var i = 1; i <= 3; i++) {
 } // 1.  2.  3. 
 
 
+/------------------------- ARRAY
 /------------------------- ARRAY
 var cats = ["Garfield", "Tom"];
 console.log(cats); // ["Garfield", "Tom"]  =>2 elements
@@ -172,6 +175,52 @@ function removeUser(user) {
   console.log("Removing: " + user);
 }
 removeUser("Lisa"); // Removing: Lisa
+
+
+
+/------------------------- OBJECT
+/------------------------- OBJECT
+var car = { };
+// we use OBJECT when we have several VARIABLES related to each other
+// to access to this object's PROPERTIES: car.make // car.model // car.year
+
+var car = {
+  make: "Toyota",
+  model: "Camry",
+  year: 2020
+};
+console.log(car.make); // Toyota
+console.log(carà; // {make: 'Toyota', model: 'Camry', year: 2020}
+
+            
+/-------------------------
+var pet = {
+  animal: "dog",
+  name: "Webster",
+  rescue: true,
+  age: 3,
+  litterMates: ["Bo", "Blue", "Clifford"]
+};
+console.log(pet); // {animal: 'dog', name: 'Webster', rescue: true, age: 3, litterMates: Array(3)}
+/--------
+
+var pet = {
+  animal: "dog",
+  name: "Webster",
+  rescue: true,
+  age: 3,
+  litterMates: ["Bo", "Blue", "Clifford"]
+};
+pet.animal = "cat"; // => (PET.ANIMAL=) changes the animal property from dog to cat
+console.log(pet); // {animal: 'cat', name: 'Webster', rescue: true, age: 3, litterMates: Array(3)}
+
+
+
+/------------------------- METHOD
+/------------------------- METHOD
+var 
+
+
 
 
 
