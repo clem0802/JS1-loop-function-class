@@ -1,6 +1,6 @@
-// 2021.10.13 FROM (MM) //! TO REVIEW AGAIN on 10.14
+// 2021.10.13 FROM (MM) 
 /*----------------------------------*/
-// FUNCTIONS
+// FUNCTION with (PARAMETER)
 // How do we use the retunr value of a function? => we call the function and use it like any other value
 // How do we store the retunr value in a variable? => we call the function and store it in a variable
 
