@@ -20,7 +20,7 @@ class Dog extends Animal{
 
 
 /*----------------------------------*/
-// INHERITANCE gives a class all the PROPERTIES of the class it is extending or inheriting from
+// INHERITANCE gives a class all the PROPERTIES of the class it is extending or inheriting FROM
 // "class Animal" is a SUPERCLASS of "class Dog"
 // "class Dog" here is a SUBCLASS of "class Animal"
 
@@ -64,11 +64,11 @@ class Animal {
         this.name = name;
     }
 
-    eat() { //!  eat() METHOD
+    eat() {    // eat() METHOD
         console.log(this.name + " is eating");
     }
 }
-class Dog extends Animal { // Dog OBJECT
+class Dog extends Animal {    // Dog OBJECT
     //
 } 
 
