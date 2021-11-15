@@ -47,7 +47,7 @@ class VirtualPet {
 }
 
 var pet = new VirtualPet("Garfield");
-pet.eat(); //! => to le the new obj "pet" use the eat() METHOD
+pet.eat(); //! => to let the new obj "pet" use the eat() METHOD
 // fishy cookies
 
 
