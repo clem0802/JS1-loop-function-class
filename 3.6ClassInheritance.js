@@ -231,6 +231,25 @@ console.log(cookbook.page); // 4
 
 
 
+
+// ******************************
+// describe correctly "student"
+// it "OWNS" two properties and "INHERITS" one method
+class Student {
+    constructor(major, year) {
+        this.major = major;
+        this.year = year;
+    }
+    
+    submitHomework() {
+        console.log("Homework already submitted");
+    }
+}
+var student = new Student("bio", "junior");
+console.log(student.submitHomework()); // Homework already submitted
+    
+    
+
 // ******************************
 class Book {
     constructor(title) {
@@ -255,3 +274,30 @@ console.log(cookbook); //! Cookbook {title: 'Pie', page: 15}
 console.log(cookbook.title); // Pie
 console.log(cookbook.setBookmark(15)); //! 15 is marked
 console.log(cookbook.page); //! 15 
+
+
+
+
+// ******************************
+// Sally is a 40-yo mother of two kids
+// create a new INSTANCE that encapsulates her information
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+
+class Parent extends Person {
+    constructor(name, age, kids) {
+        super(name, age);
+        this.kids = kids
+    }
+}
+var parent = new Parent("Sally", 40, 2);
+console.log(parent); 
+// Parent {name: 'Sally', age: 40, kids: 2}
+
+
+
+
