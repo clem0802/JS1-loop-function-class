@@ -291,7 +291,7 @@ class Person {
 class Parent extends Person {
     constructor(name, age, kids) {
         super(name, age);
-        this.kids = kids
+        this.kids = kids;
     }
 }
 var parent = new Parent("Sally", 40, 2);
@@ -301,3 +301,45 @@ console.log(parent);
 
 
 
+// ******************************
+// create a new class called "Professor"
+// whose INSTANCES receive both "name" and "subject" PROPERTIES
+class Person {
+    constructor(name) {
+        this.name = name;
+    }
+}
+
+class Teacher extends Person {
+    constructor(name, subject) {
+        super(name);
+        this.subject = subject;
+    }
+}
+class Professor extends Teacher {}
+    
+    
+    
+
+// ******************************
+// what is the best way to set both the "company" and "language" properties on "dev" ?
+class Employee {
+    constructor(company) {
+        this.company = company;
+    }
+}
+
+class Dev extends Employee {
+    constructor(company, language) {
+        super(company);
+        this.language = language;
+    }
+}
+
+var dev = new Dev("Mimo", "JS");
+    
+    
+    
+    
+    
+    
