@@ -56,7 +56,7 @@ phone.ring(); // ding ding ding
 var phone = {
     brand: "Apple",
     number: "555-555-5555",
-    call: function(number) {
+    call: function(number){
         console.log("Calling " + "555-555-5555");
     }
 };
