@@ -13,6 +13,7 @@ var microwave = {
   heat: function(){} // => "heat" is the METHOD of the OBJECT "microwave"
 };
 
+
 //--------------------- (II)
 var microwave = {
   brand: "Samsung",
