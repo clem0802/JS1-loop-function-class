@@ -11,7 +11,7 @@ function displayMessage(message){
 displayMessage('Approved'); // Approved
 
 
-
+/*----------------------------------*/
 // we can add other code blocks inside a function
 // extra pair of braces let us know which instructions belong where
 function isRentingAge(age){
@@ -22,6 +22,7 @@ function isRentingAge(age){
 isRentingAge(26); // Approved //! => FUNCTION CALL
 
 
+/*-----------*/
 // instructions outside of nested code blocks still get executed
 // even if the code inside the conditional statement gets skipped
 function isRentingAge(age){
@@ -33,7 +34,7 @@ function isRentingAge(age){
 isRentingAge(22); //! Check complete
 
 
-
+/*-----------*/
 // the space to the left is called "indentation"
 // when we add a code block inside another, the entire code block gets indented by one space
 function displayAlarm(time){
@@ -44,7 +45,7 @@ function displayAlarm(time){
 displayAlarm("7:00"); // Waky Waky
 
 
-
+/*-----------*/
 function isLying(boolean){
     console.log("Welcome to the Lie Detector 3000");
     if (boolean === false) {
@@ -56,17 +57,19 @@ isLying(false);
 // He's lying
 
 
-
+/*-----------*/
 function hasFailed(score){
     console.log("Checking Score");
     if (score <= 50){
         console.log("Failed");
+    } else {
+        console.log("Success!");
     }
 }
 hasFailed(80); // Checking Score
 
 
-
+/*-----------*/
 function isLying(boolean){
     if(boolean === true){
         console.log("He's not lying");
@@ -79,7 +82,7 @@ isLying(true);
 // Verification complete
 
 
-
+/*-----------*/
 function displaySalary(salary){
     if(salary < 2100){
         salary = salary + 500;
@@ -90,8 +93,8 @@ displaySalary(2000); // 2500
 
 
 
-/*----------------------------------*/
-// skip the instruction inside the if statement
+/*-----------*/
+// skip the instruction inside the IF statement (?)
 function getTaxedSalary(salary){
     if(salary > 2100){      //! 
         salary = salary - 500;
@@ -102,6 +105,7 @@ var income = getTaxedSalary(2500);
 console.log(income); // 2000
 
 
+/*-----------*/
 function getTaxedSalary(salary){
     if(salary === 2100){
         salary = salary - 500;
@@ -116,46 +120,42 @@ console.log(income); // 2500
 // 2021.10.21 FROM (MM) 
 /*----------------------------------*/
 // REUSABLE PROGRAMS-1 (FUNCTIONS-CONDITIONS)
-// when creating functions, we have to think about thwne and why we need conditional statements inside of them.
+// when creating functions, we have to think about when and why we need conditional statements inside of them
 // anytime I enter a password, a function with a conditional statement decides what message to show me
 function applySeniorDiscount(age){
     if(age>=65){
-        console.log(age + " year old has 50% OFF");
+        console.log(age + " years old has " + age + " % OFF");
     }
 }
 applySeniorDiscount(18);
-applySeniorDiscount(67); // 67 years old has 50% OFF
+applySeniorDiscount(67); // 67 years old has 67% OFF
 
 
-
+/*-----------*/
 //! isGreater()
 function isGreater(a,b){
     if(a>b){
         console.log(a + " is greater than " + b);
-    }
-}
-isGreater(13,10);
-
-
-
-// ELSE (when the function changes based on its parameter)
-function checkPassword(word){
-    if (word === "12345"){
-        console.log("Logging in");
     } else {
-        console.log("Wrong password");
+        console.log("comparison failed");
     }
 }
-checkPassword("swordfish");REUSABLE PROGRAMS
+isGreater(13,10); // 13 is greater than 10
+isGreater(9,10); // comparison failed
+    
+
+/*-----------*/
+function ifGreater(a,b){ 
+    if(a>b){
         console.log(a + " is greater");
     } else {
         console.log(a + " isn't greater");
     }
 }
-isGreater(10,20); // 10 isn't greater
+ifGreater(10,20); // 10 isn't greater
 
 
-
+/*-----------*/
 function checkGreater(a,b){
     if(a === b){
         console.log("Numbers are equal");
@@ -164,3 +164,15 @@ function checkGreater(a,b){
     }
 }
 checkGreater(10,10); // Numbers are equal
+
+
+/*-----------*/
+// ELSE (when the function changes based on its parameter)
+function checkPassword(word){
+    if (word === "12345"){
+        console.log("Logging in");
+    } else {
+        console.log("Wrong password");
+    }
+}
+checkPassword("swordfish"); // Wrong password
