@@ -34,7 +34,7 @@ console.log(dog.bark("hungry")); // woof woof, hungry
 //! the cat object runs the meow method
 var cat = {
     name: "Mittens",
-    meow: function (){
+    meow: function(){
         console.log("meow");
     }
 };
@@ -56,7 +56,7 @@ phone.ring(); // ding ding ding
 var phone = {
     brand: "Apple",
     number: "555-555-5555",
-    call: function(number){
+    call: function(number) {
         console.log("Calling " + "555-555-5555");
     }
 };
