@@ -2,7 +2,7 @@
 /*----------------------------------*/
 // OBJECTS
 // a group of related content grouped into one VARIABLE
-// an object can have as many properties as we want, as long as each property s separated by a comma (,)
+// an object can have as many properties as we want, as long as each property is separated by a comma (,)
 // object properties can be numbers, strings, booleans, array, or even OTHER OBJECTS
 
 var name = "Garfield";
