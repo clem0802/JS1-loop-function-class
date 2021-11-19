@@ -46,6 +46,7 @@ var microwave = {
     return this.on;
     } 
 };
+microwave.isOn(); // true
 
 
 // here, display the "brand" of the "microwave" object
@@ -65,9 +66,11 @@ var apartment = {
   number: 404,
   location: "unknown",
   display: function(){
+    return this.location;
   }
 };
 apartment.display(); // here calls the "apartment" object's METHOD "display"
+// unknown
 
 //--------------------- (VIb)
 var apartment = {
@@ -80,6 +83,7 @@ var apartment = {
 };
 apartment.display(); 
 console.log("apartment location: " + apartment.location); // apartment location: unknown
+console.log(apartment.number); // 200
 
 //--------------------- (VIc)
 var apartment = {
