@@ -18,7 +18,7 @@ console.log(car1);
 // by adding methods to classes, we will be able to create interactive objects using the classes as templates
 // objects created from a class have access to its METHODS
 // adding a method in a class is like creating a regular function except there's no need for the "function" keyword
-// here we give the pet the ability to eat with a //! METHOD
+// here we give the pet the ability to "eat" with a "METHOD"
 class VirtualPet {
     constructor(name) {
         this.name = name;
@@ -34,7 +34,7 @@ class VirtualPet {
 /*----------------------------------*/
 // inside the braces, methods work like normal functions
 // see below, the "eat METHOD"
-//! to use the eat() METHOD, need (name of the object) + (.) + (the name of the method) + ()
+// to use the eat() METHOD, need (name of the object) + (.) + (the name of the method) + ()
 // pet.eat();
 class VirtualPet {
     constructor(name) {
@@ -47,8 +47,8 @@ class VirtualPet {
 }
 
 var pet = new VirtualPet("Garfield");
-pet.eat(); //! => to let the new obj "pet" use the eat() METHOD
-// fishy cookies
+pet.eat(); // fishy cookies => to let the new obj "pet" use the eat() METHOD
+console.log(pet.name); // Garfield
 
 
 
