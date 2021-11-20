@@ -25,12 +25,13 @@ console.log(greeting()); // Hi
 //! just like with traditional functions, we use curly braces {} to contain an arrow function's code block
 
 function getGreeting(firstName){
-    return "Greetings!" + firstName;
+    return "Greetings! " + firstName;
 }
 
 var welcome = (firstName) => { //!
     return "Hi, " + firstName;
 }
+console.log(getGreeting("Isaac")); // Greetings! Isaac
 console.log(welcome("Isaac")); // Hi, Isaac
 
 
@@ -40,7 +41,7 @@ const greetings = () => {
     const name = "Isaac";
     return "Hello my son " + name;
 }
-console.log(greetings);
+console.log(greetings()); // Hello my son Isaac
 //------
 
 const greetings = () => {
@@ -79,7 +80,7 @@ const getStudentsCount = () => {
     count = 200;
     return count;
 }
-console.log(getStudentsCount()); // 200 => don't forget ()
+console.log(getStudentsCount()); // 200 => don't forget "()"
 
 
 /*----------------------------------*/
@@ -95,7 +96,7 @@ const getCount = () => {
     count = 400;
     return count;
 }
-console.log(getCount()); // 400 => don't forget ()
+console.log(getCount()); // 400 => don't forget "()"
 
 
 
