@@ -3,8 +3,8 @@
 // CLASSES
 // classes are TEMPLATES FOR OBJECTS
 // to code complex programs, need to create many similar but distinct objects
-// to make the process less error-prone and more efficient, we use data structures called classes as templates
-// once we create a template with the properties we want for all similar objects
+// to make the process less error-prone and more efficient, we use data structures called CLASSES as templates
+// once we create a template with the properties we want for all similar objects,
 // we can use it to create new objects faster
 
 var book100 = {
@@ -25,7 +25,7 @@ class Book {
 /*----------------------------------*/
 // CONSTRUCTOR()
 //! the class name starts with an "UPPERCASE letter"
-//! inside a class we need a special METHOD called the "constructor()"
+//! inside a class we need a special "METHOD" called the "constructor()"
 class Book {
     constructor(){
 
@@ -45,7 +45,7 @@ class Book {
 
 
 /*----------------------------------*/
-// THIS
+// THIS.
 // to create a new object property, we use the keyword "THIS" followed by (.) and the property name
 class Book {
     constructor(author, title){
