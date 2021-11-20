@@ -6,19 +6,20 @@
 /*----------------------------------*/
 // code incomplete
 class Employee {
-  constructor(compagny) {
+  constructor(company) {
     this.company = company;
   }
 }
 
 class Developer extends Employee {
   constructor(company, language) {
-//     this.company = company;  // (taken off)
-    super(company);  // put in this one instead ??
+//  this.company = company;  => (taken off)
+    super(company);  // put in this one instead 
     this.language = language;
   }
 }
 var dev = new Developer("Mimo", "JavaScript");
+console.log(dev); // Developer {company: 'Mimo', language: 'JavaScript'}
 
 
 
@@ -50,7 +51,7 @@ class Cell extends Phone {
 
 class Smartphone extends Cell {
   watchMovies() {
-    console.log("CLoading movies");
+    console.log("Loading movies");
   }
 }
 var phone = new Cell(); // choose "Cell" so "phone" can call and surf, but can't watch movies
@@ -86,7 +87,7 @@ class User {
     this.username = username;
   }
 }
-var user1 ) new User("Tim");
+var user1 = new User("Tim");
 var user2 = new User("Sue");
 var admin = new User("Pat");
                      
