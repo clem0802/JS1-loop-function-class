@@ -67,9 +67,9 @@ console.log(result);
 
 function hasHonors(grade){
     if(grade >= 75){
-        return "With honors";
+        return "With honors"; // (Avec félicitations)
     }
-    return "Without honors";
+    return "Without honors"; // (Sans félicitations)
 }
 var result = hasHonors(10);
 console.log(result); // Without honors
