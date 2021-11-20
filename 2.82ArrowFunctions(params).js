@@ -35,7 +35,7 @@ console.log(getPrice(10)); // 90
 
 
 /*----------------------------------*/
-// PARAMETERS
+// PARAMETERS (3 cases)
 
 const getPrice = (total) => {
     const tax = 0.16;
@@ -68,18 +68,19 @@ console.log(getPrice()); // 232
 // How we write them depends on the parameters we use and the code block size
 // these functions will be essential later on when we'll use them in more complex code, like REACT
 
+//-------- (2 parameters)
 const getPrice = (total=200, discount=3) => total - (discount / 100 * total);
 console.log(getPrice()); // 194
 
 
-/*----------------------------------*/
+//-------- (1 parameter)
 const getPrice = (total) => {
     const discount = 0.10;
     return total - (discount * total);
 }
 console.log(getPrice(1000)); // 900
-//--------
 
+//-------- (2 parameters)
 const getPrice = (total=1000, discount=10) => total - (discount / 100 * total);
 console.log(getPrice()); // 900
 
@@ -87,22 +88,23 @@ console.log(getPrice()); // 900
 
 /*----------------------------------*/
 /*----------------------------------*/
+//-------- (le produit)
 const getSquare = (number, multiplier) => number * multiplier;
 console.log(getSquare(4,5)); // 20
-//--------
 
+//-------- (le quotient)
 const getRatio = (nom, denom) => {
     return nom / denom;
 }
-console.log(getRatio(20,2)); // 10
-//--------
+console.log(getRatio(20,2)); // 10 
 
+//--------
 const getRatio = (nom, denom = 2) => {
     return nom / denom;
 }
 console.log(getRatio(40)); // 20
-//--------
 
+//--------
 const getRatio = (nom, denom = 2) => {
     return nom / denom;
 }
@@ -112,25 +114,29 @@ console.log(getRatio(40,4)); // 10
 
 /*----------------------------------*/
 /*----------------------------------*/
+//--------
 const getTitle = (movie) => { //! check
     return "20th Century Movie: " + movie;
 }
 console.log(getTitle("Coming Home")); // 20th Century Movie: Coming Home
-//--------
 
+//--------
 const getMultiple = (number) => number * 2; 
 console.log(getMultiple(4)); // 8
-//--------
 
+//--------
 const getSquare = (number = 0) => number * number; //! BE CAREFUL
 console.log(getSquare(5)); // 25
-//--------
+console.log(getSquare(10)); // 100
 
+//--------
 const getArea = (length, width = 3) => length * width;  //  ATTENTION, in console.log  5=length, by default
 console.log(getArea(5)); // 15
-//--------
 
+//--------
 const getArea = (length, width = 3) => { //  ATTENTION, in console.log  10=length, by default
     return length * width;
 }
 console.log(getArea(10)); // 30
+
+
