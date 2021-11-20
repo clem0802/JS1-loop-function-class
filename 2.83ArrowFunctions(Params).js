@@ -30,6 +30,11 @@ console.log(getConvertedHours(7200)); // 2
 // add the DEFAULT PARAMETER value "0" to the ARROW FUNCTION
 const getConvertedHours = (seconds=14400) => seconds / 3600;   
 console.log(getConvertedHours()); // 4
+//---------
+
+// add the DEFAULT PARAMETER value "0" to the ARROW FUNCTION
+const getConvertedHours = (seconds=14400) => seconds / 3600;   
+console.log(getConvertedHours(18000)); // 5
 
 
 
