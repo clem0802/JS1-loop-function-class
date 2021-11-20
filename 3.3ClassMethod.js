@@ -51,5 +51,6 @@ class VirtualPet {
 
 var vDog = new VirtualPet("Bella");
 console.log(vDog); // VirtualPet {name: 'Bella'}
+console.log(vDog.name); / Bella
 vDog.drink("water"); // discard
 
