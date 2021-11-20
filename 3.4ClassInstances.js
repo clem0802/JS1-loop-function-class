@@ -106,7 +106,7 @@ console.log(user4.status); // Hey, I am using Mimo
 
 
 /*----------------------------------*/
-//! when CHANGING A CLASS, we can change both its PROPERTIES and its METHODS
+//! when CHANGING a CLASS, we can change both its PROPERTIES and its METHODS
 // add a "sayHi" METHOD so that all users have a short status description from now on
 class User {
     constructor(name) {
@@ -132,7 +132,7 @@ user4.sayHi(); // Hello, I'm Pierre
 /*----------------------------------*/
 // the CONSTRUCTOR is what creates an INSTANCE
 // but it doesn't always need to have properties inside of it
-// it works even when //! EMPTY
+// it works even when "EMPTY"
 // "empty" CONSTRUCTOR means NOTHING in between the { }
 class User {
     constructor() {
@@ -157,11 +157,11 @@ user3.sayHi();
 
 
 /*----------------------------------*/
-// the CONSTRUCTOR //! absent
+// the CONSTRUCTOR() absent
 // 'cause a default CONSTRUCTOR kicks in when it is NOT THERE
 // user1 INSTANCE is created with an empty constructor added behind the scenes when running the code
 class User {
-    sayHi() { //!
+    sayHi() { 
         console.log("Hi there!");
     }
 }
@@ -176,11 +176,12 @@ user3.sayHi(); // Hi there!
 
 
 /*----------------------------------*/
-// constructor() absent
+// the CONSTRUCTOR() absent
 class Car {
-    showWarning() { //!
+    showWarning() { 
         console.log("Fasten seatbelts!");
     }
 }
 var car = new Car();
 car.showWarning(); // Fasten seatbelts!
+
