@@ -11,13 +11,13 @@ class Human {
         ...
     }
 
-    receiveDamage() {
+    receiveDamage(health = 100) {
         this.health = this.health - 10;
     }
 }
 
 class Wizard extends Human {
-    receiveDamage() {
+    receiveDamage(health = 100) {
         this.health = this.health - 5;
     }
 }
