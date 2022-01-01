@@ -135,7 +135,7 @@ console.log(wallet); // 4
 var wallet = 3;
 wallet = wallet +2;
 wallet = wallet -1;
-console.log(wallet); // 3+2-1=5
+console.log(wallet); // 3+2-1=4
 
 var name = "Account name: ";
 name = name + "Isaac";
