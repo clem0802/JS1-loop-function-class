@@ -209,7 +209,7 @@ class Book {
 }
 class Cookbook extends Book {
     setBookmark(page) {
-        console.log(this.page + " is marked");
+        console.log("Page " + this.page + " is marked");
     }
 }
 
@@ -261,10 +261,10 @@ class Cookbook extends Book {
 }
 
 var cookbook = new Cookbook("Pie");
-cookbook.setBookmark(15); //! 15 is marked
+cookbook.setBookmark(15); //!  Page 15 is marked
 console.log(cookbook); //! Cookbook {title: 'Pie', page: 15}
 console.log(cookbook.title); // Pie
-console.log(cookbook.setBookmark(15)); //! 15 is marked
+console.log(cookbook.setBookmark(15)); //!  Page 15 is marked
 console.log(cookbook.page); //! 15 
 
 
