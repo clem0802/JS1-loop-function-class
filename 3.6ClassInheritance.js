@@ -256,7 +256,7 @@ class Book {
 class Cookbook extends Book {
     setBookmark(page) {
         this.page = 15;  // !!!!! (like this the SUPERCLASS will be OVERRIDDEN
-        console.log(this.page + " is marked");
+        console.log("Page " + this.page + " is marked");
     }
 }
 
