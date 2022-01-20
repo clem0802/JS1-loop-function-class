@@ -214,10 +214,10 @@ class Cookbook extends Book {
 }
 
 var cookbook = new Cookbook("Pie");
-cookbook.setBookmark(15); // 4 is marked
+cookbook.setBookmark(15); // Page 4 is marked
 console.log(cookbook); // Cookbook {title: 'Pie', page: 4}
 console.log(cookbook.title); // Pie
-console.log(cookbook.setBookmark(15)); // 4 is marked
+console.log(cookbook.setBookmark(15)); // Page 4 is marked
 console.log(cookbook.page); // 4 
 
 
